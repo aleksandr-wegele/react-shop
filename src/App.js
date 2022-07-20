@@ -4,6 +4,24 @@
 function App() {
   return (
     <div className="wrapper clear">
+
+      <div className="overlay">
+        <div className="drawer">
+          <h2>Корзина</h2>
+
+          <div className="cartItem">
+            <img src="/img/sneakers/1.png" alt="" className="cartItem_img" widht={70} height={70}/>
+            <div className="cartItem_info">
+              <p className="cartItem_info-description">Мужские Кроссовки Nike Blazer Mid Suede</p>
+              <b className="cartItem_info-price">12 999 руб.</b>
+            </div>
+            <img src="/img/btn-remove.svg" alt="Remove" className="btn-remove"/>
+
+          </div>
+
+        </div>
+      </div>
+
       <header className="header">
         <div className="header__left">
           <img widht={40} height={40} src="/img/logo_header.png" className="header__left-logo" alt=""/>
