@@ -30,7 +30,13 @@ function App() {
       <main className="main">
       <div className="slider"></div>
       <div className="content">
-        <h1 className="content__headding headding">Все кроссовки</h1>
+        <div className="content__headding">
+          <h1 className="headding">Все кроссовки</h1>
+          <div className="search__block">
+            <img src="/img/search.svg" className="search_img" alt="search"/>
+            <input className="search__block_search" placeholder="Поиск..."/>
+          </div>
+        </div>
         <div className="all_item">
         <div className="content__item">
           <img  src="/img/sneakers/1.png" className="content__item_img" alt=""/>

@@ -77,13 +77,34 @@ padding-top: 50px auto;
 
 /*заголовки контента*/
 
-.content__headding{
+.headding{
   margin: 0;
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
   color: #000000;
 
+}
+
+.content__headding{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/*поиск*/
+.search__block{
+  display: flex;
+  border: 1px solid #F3F3F3;
+  border-radius: 15px;
+  padding-left: 18px;
+}
+
+.search__block_search{
+  border: none;
+  padding: 10px;
+  font-size: 16px;
 }
 
 /*карточки товаров*/
