@@ -7,7 +7,7 @@ function App() {
 
       <div className="overlay">
         <div className="drawer">
-          <h2>Корзина</h2>
+          <h2 className="drawer__name">Корзина</h2>
 
           <div className="cartItem">
             <img src="/img/sneakers/1.png" alt="" className="cartItem_img" widht={70} height={70}/>
