@@ -45,9 +45,6 @@ padding-top: 50px auto;
   }
 }
 
-.header__right{
-}
-
 .header__right-list{
   margin: 0;
   padding: 0;
@@ -59,16 +56,6 @@ padding-top: 50px auto;
   padding: 0;
   list-style-type: none;
 }
-
-.cart{}
-
-.cart_img{}
-
-.cart__count{}
-
-.favorite{}
-
-.union{}
 
 /* контент */
 .content{
@@ -246,10 +233,6 @@ padding-top: 50px auto;
 }
 
 /*итог в корзине*/
-.drawer__list{
-
-}
-
 .drawer__list_item{
   display: flex;
   justify-content: space-between;
