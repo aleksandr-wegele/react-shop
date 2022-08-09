@@ -237,7 +237,45 @@ padding-top: 50px auto;
   &:hover{
     opacity: 1;
   }
-}  margin-top: 15px;
+}
+
+/*итог в корзине*/
+.drawer__list{
+
+}
+
+.drawer__list_item{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.list__item_headding{
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.list__item_dashed{
+  width: 60%;
+  border-bottom: 1px dashed #DFDFDF;
+}
+
+.list__item_description{
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+/*кнопка оформить заказ*/
+.drawer__btn{
+  margin-top: 15px;
   min-width: 325px;
   min-height: 55px;
   align-content: center;

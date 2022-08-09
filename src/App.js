@@ -19,6 +19,18 @@ function App() {
 
           </div>
 
+          <ul className="drawer__list">
+            <li className="drawer__list_item">
+              <span className="list__item_headding">Итого:</span>
+              <div className="list__item_dashed"></div>
+              <b  className="list__item_description">21 498 руб.</b>
+            </li>
+            <li className="drawer__list_item">
+              <span className="list__item_headding">Налог 5%:</span>
+              <div className="list__item_dashed"></div>
+              <b  className="list__item_description">1074 руб.</b>
+            </li>
+          </ul>
           <button className="drawer__btn">Оформить заказ</button>
 
         </div>
