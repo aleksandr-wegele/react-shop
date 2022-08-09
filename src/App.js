@@ -19,6 +19,8 @@ function App() {
 
           </div>
 
+          <button className="drawer__btn">Оформить заказ</button>
+
         </div>
       </div>
 

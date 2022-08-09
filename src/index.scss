@@ -237,4 +237,24 @@ padding-top: 50px auto;
   &:hover{
     opacity: 1;
   }
+}  margin-top: 15px;
+  min-width: 325px;
+  min-height: 55px;
+  align-content: center;
+  border: none;
+  border-radius: 18px;
+  background-color: #9DD558;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  background-image: url('../public/img/next.svg');
+  background-repeat: no-repeat;
+  background-position: 278px 21px;
+  cursor: pointer;
+  transition: box-shadow 2s ease-in-out; transform: 2s ease-in-out;
+  &:hover{
+    box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.2);
+  }
 }
