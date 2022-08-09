@@ -17,7 +17,7 @@ code {
 background: #FFFFFF;
 box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
 border-radius: 20px;
-max-width: 1080px;
+max-width: 1280px;
 margin: 0 auto;
 padding-top: 50px auto;
 }
@@ -194,11 +194,16 @@ padding-top: 50px auto;
   background: #FFFFFF;
   box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
   padding: 30px;
-
+  display: flex;
+  flex-direction: column;
   h2{
     margin: 0;
     margin-bottom: 30px;
   }
+}
+
+.items{
+  flex: 1;
 }
 
 /*карточки в корзине*/
@@ -209,7 +214,8 @@ padding-top: 50px auto;
   border: 1px solid #f3f3f3;
   border-radius: 20px;
   overflow: hidden;
-  padding: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
 .cartItem_img{
