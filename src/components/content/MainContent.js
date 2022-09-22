@@ -31,7 +31,12 @@ function MainContent(){
           </div>
         </div>
         <div className="all_item">
-        <ContentItem/>
+        {arrContentItem.map((obj) => (
+          <ContentItem 
+            title={obj.title} 
+            price={obj.price} 
+            imgUrl={obj.imgUrl}/>
+        ))}
         </div>
       </div>
       </main>
