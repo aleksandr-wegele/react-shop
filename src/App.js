@@ -1,5 +1,6 @@
-
-
+import Header from "./components/Header";
+import MainContent from "./components/content/MainContent";
+import Drawer from "./components/Drawer";
 
 function App() {
   return (
@@ -144,6 +145,7 @@ function App() {
         </div>
       </div>
       </main>
+      <Drawer/>
     </div>
   );
 }
