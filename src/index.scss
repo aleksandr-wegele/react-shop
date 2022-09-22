@@ -183,9 +183,19 @@ padding-top: 50px auto;
   padding: 30px;
   display: flex;
   flex-direction: column;
-  h2{
+  
+  .drawer__name{
     margin: 0;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    .btn-remove{
+      cursor: pointer;
+    }
+  }
+  .items{
+    overflow: auto;
+    margin-bottom: 40px;
   }
 }
 
@@ -276,9 +286,6 @@ padding-top: 50px auto;
   line-height: 19px;
   text-align: center;
   color: #FFFFFF;
-  background-image: url('../public/img/next.svg');
-  background-repeat: no-repeat;
-  background-position: 278px 21px;
   cursor: pointer;
   transition: background 0.1s ease-in-out;
   &:hover{
@@ -286,5 +293,20 @@ padding-top: 50px auto;
   }
   &:active{
     background-color: darken($color: #9DD558, $amount: 5%);
+  }
+}
+.drawer__btn{
+  position: relative;
+  &:hover{
+    .drawer__btn_next{
+    transform: translateX(5px);
+  }
+}
+  .drawer__btn_next{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    transition: transform 0.15s ease-in-out;
+    
   }
 }
