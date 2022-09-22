@@ -146,6 +146,7 @@ function App() {
       </div>
       </main>
       <Drawer/>
+      <Header/>
     </div>
   );
 }
