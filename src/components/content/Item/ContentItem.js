@@ -1,6 +1,6 @@
 import styles from './ContentItem.module.scss';
-import btnPlus from '../../img/btn-plus.svg';
-import noLike from '../../img/no-like.svg';
+import noLike from './img/no-like.svg'
+import btnPlus from './img/btn-plus.svg'
 
 function ContentItem(props){
  console.log(props);
