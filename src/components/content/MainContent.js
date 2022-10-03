@@ -6,8 +6,11 @@ import ContentItem from "./Item/ContentItem";
 
 function MainContent(){
   const [items, setItems] = React.useState([])
-
-React.useEffect(() =>{
+  
+  const onAddToCart = (obj) => {
+    console.log(obj)
+  }
+React.useEffect(() => {
   fetch('https://633b38f9671dd0beee002729.mockapi.io/Items').then(res =>{
     return res.json();
   }).then((json) => {
@@ -27,13 +30,13 @@ React.useEffect(() =>{
               </div>
             </div>
             <div className="all_item">
-            {items.map((obj) => (
+            {items.map((item) => (
               <ContentItem 
-              title={obj.title} 
-              price={obj.price} 
-              imgUrl={obj.imgUrl} 
+              title={item.title} 
+              price={item.price} 
+              imgUrl={item.imgUrl} 
               onFavorite={() => console.log("добавили закладки")}
-              onBtnPlus={() => console.log("Нажали плюс")}
+              onBtnPlus={(obj) => onAddToCart(obj)}
               />
             ))}
             </div>

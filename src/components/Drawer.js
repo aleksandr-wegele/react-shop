@@ -1,10 +1,11 @@
-function Drawer (props){
+function Drawer ({onClose, items = []}){
     return(
         <div className="overlay">
         <div className="drawer">
-          <h2 className="drawer__name">Корзина <img onClick={props.onClose} src="/img/btn-remove.svg" alt="Remove" className="btn-remove"/></h2>
+          <h2 className="drawer__name">Корзина <img onClick={onClose} src="/img/btn-remove.svg" alt="Remove" className="btn-remove"/></h2>
           <div className="items">
-            <div className="cartItem">
+            {items.map((obj) =>{
+              <div className="cartItem">
               <img src="/img/sneakers/1.png" alt="" className="cartItem_img" widht={70} height={70}/>
               <div className="cartItem_info">
                 <p className="cartItem_info-description">Мужские Кроссовки Nike Blazer Mid Suede</p>
@@ -12,15 +13,7 @@ function Drawer (props){
               </div>
               <img src="/img/btn-remove.svg" alt="Remove" className="btn-remove"/>
             </div>
-
-            <div className="cartItem">
-              <img src="/img/sneakers/1.png" alt="" className="cartItem_img" widht={70} height={70}/>
-              <div className="cartItem_info">
-                <p className="cartItem_info-description">Мужские Кроссовки Nike Blazer Mid Suede</p>
-                <b className="cartItem_info-price">12 999 руб.</b>
-              </div>
-              <img src="/img/btn-remove.svg" alt="Remove" className="btn-remove"/>
-            </div>
+            })}
           </div>
 
           <ul className="drawer__list">
