@@ -57,6 +57,10 @@ padding-top: 50px auto;
   list-style-type: none;
 }
 
+.cart{
+  cursor: pointer;
+}
+
 /* контент */
 .content{
   padding: 40px;
@@ -145,20 +149,6 @@ padding-top: 50px auto;
 .content__item_description-price{
   font-size: 14px;
   line-height: 17px;
-}
-
-.content__item_description-btn{
-  width: 32px;
-  height: 32px;
-  background-color: #ffffff;
-  border: 1px solid #F2F2F2;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.like{
-  position: absolute;
-  cursor: pointer;
 }
 
 /*корзтна*/
