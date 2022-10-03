@@ -1,8 +1,19 @@
 import './MainContent.module.scss';
+import React from 'react';
 import ContentItem from "./Item/ContentItem";
 
 
 function MainContent(){
+  const [items, setItems] = React.useState([])
+
+React.useEffect(() =>{
+  fetch('https://633b38f9671dd0beee002729.mockapi.io/Items').then(res =>{
+    return res.json();
+  }).then((json) => {
+    setItems(json)
+  });
+}, []);
+
     return(
         <main className="main">
       <div className="slider"></div>
