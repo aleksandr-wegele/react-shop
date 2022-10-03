@@ -12,9 +12,11 @@
     }
   }
   
+
   .content__item_img{
     width: 132px;
     height: 112px;
+    z-index: 0;
   }
   
   .content__item_description{
@@ -51,4 +53,7 @@
   .like{
     position: absolute;
     cursor: pointer;
+    z-index: 1;
   }
+
+  
