@@ -300,3 +300,49 @@ padding-top: 50px auto;
     
   }
 }
+
+/* контент */
+.content{
+  padding: 40px;
+}
+
+/*заголовки контента*/
+
+.headding{
+  margin: 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+
+}
+
+.content__headding{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/*поиск*/
+.search__block{
+  display: flex;
+  border: 1px solid #F3F3F3;
+  border-radius: 10px;
+  padding: 0 15px;
+}
+
+.search__block_search{
+  border: none;
+  padding: 13px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.all_item{
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+
+}
