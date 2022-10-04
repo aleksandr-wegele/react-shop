@@ -1,4 +1,4 @@
-import ContentItem from "./components/content/Item/ContentItem"
+import ContentItem from "./components/Item/ContentItem"
 import Header from "./components/Header";
 import Drawer from "./components/Drawer";
 import React from "react";
@@ -20,8 +20,6 @@ function App() {
   const onAddToCart = (obj) => {
     setCartItems([...cartItems, obj])
   }; 
-
-  console.log(cartItems)
   
   return (
     <div className="wrapper clear">

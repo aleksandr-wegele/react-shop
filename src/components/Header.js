@@ -12,14 +12,14 @@ function Header(props){
         </div>
         <div className={styles.header__right}>
           <ul className={styles.header__right_list}>
-            <li onClick={props.onClickCart} className={styles.header__right_list_item + ' ' + styles.cart}>
+            <li onClick={props.onClickCart} className={`${styles.header__right_list_item} ${styles.cart}`}>
               <img widht={18} height={18} src="/img/cart_header.svg" className={styles.cart_img} alt=""/>
               <span className={styles.cart__count}>1205 руб.</span>
             </li>
-            <li className={styles.header__right_list_item + ' ' + styles.favorite}>
+            <li className={`${styles.header__right_list_item} ${styles.favorite}`}>
               <img widht={18} height={18} src="/img/favorite_header.svg" className={styles.favorite} alt=""/>
             </li>
-            <li className={styles.header__right_list_item + ' ' + styles.union}>
+            <li className={`${styles.header__right_list_item} ${styles.union}`}>
               <img widht={18} height={18} src="/img/union_header.svg" className={styles.union} alt=""/>
             </li>
           </ul>
