@@ -12,21 +12,33 @@ function App() {
   
 
   React.useEffect(() => {
-  fetch('https://633b38f9671dd0beee002729.mockapi.io/Items').then(res =>{
-    return res.json();
-  }).then((json) => {
-    setItems(json)
+  axios.get('https://633b38f9671dd0beee002729.mockapi.io/Items').then((res) => {
+    setItems(res.data);
+  });
+  axios.get('https://633b38f9671dd0beee002729.mockapi.io/cart').then((res) => {
+    setCartItems(res.data);
   });
   }, []);
 
   const onAddToCart = (obj) => {
-    setCartItems([...cartItems, obj])
-  }; 
+    axios.post('https://633b38f9671dd0beee002729.mockapi.io/cart', obj);
+    setCartItems((prev) => [...prev, obj])
+  };
+  
+  const onRemoveItem = (id) => {
+    axios.delete(`https://633b38f9671dd0beee002729.mockapi.io/cart/${id}`);
+    setCartItems((prev) => prev.filter(item => item.id !== id))
+  }
+
+  const onChangeSearchInput = (event) => {
+    setSearchValue(event.target.value)
+  }
   
   return (
     <div className="wrapper clear">
 
       {cartOpened && <Drawer items={cartItems} onClose={() => setCartOpened(false)}/>}
+      {cartOpened && <Drawer items={cartItems} onClose={() => setCartOpened(false)} onRemove={onRemoveItem}/>}
       <Header onClickCart={() => setCartOpened(true)}/>
       <main className="main">
           <div className="slider"></div>
