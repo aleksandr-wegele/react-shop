@@ -37,7 +37,6 @@ function App() {
   return (
     <div className="wrapper clear">
 
-      {cartOpened && <Drawer items={cartItems} onClose={() => setCartOpened(false)}/>}
       {cartOpened && <Drawer items={cartItems} onClose={() => setCartOpened(false)} onRemove={onRemoveItem}/>}
       <Header onClickCart={() => setCartOpened(true)}/>
       <main className="main">
@@ -52,8 +51,11 @@ function App() {
               </div>
             </div>
             <div className="all_item">
-            {items.map((item) => (
+            {items
+            .filter((item) => item.title.toLowerCase().includes(searchValue.toLowerCase()))
+            .map((item, index) => (
               <ContentItem 
+              key={index}
               title={item.title} 
               price={item.price} 
               imgUrl={item.imgUrl} 
