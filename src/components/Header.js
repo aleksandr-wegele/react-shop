@@ -1,4 +1,4 @@
-import styles from './Header.module.scss'
+import styles from './style/Header.module.scss'
 
 function Header(props){
     return(
