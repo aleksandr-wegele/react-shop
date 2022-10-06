@@ -16,8 +16,9 @@ function ContentItem({price, title, imgUrl, onFavorite, onBtnPlus}){
  };
 
  const onClickFavorite = () => {
+  onFavorite({price, title, imgUrl});
   setIsFavorite(!isFavorite)
- }
+ };
 
 return (
         <div className={styles.content__item}>

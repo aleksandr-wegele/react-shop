@@ -7,8 +7,10 @@ import axios from "axios";
 function App() {
   const [items, setItems] = React.useState([]);
   const [cartItems, setCartItems] = React.useState([]);
+  const [favorites, setFavorites] = React.useState([]);
   const [cartOpened, setCartOpened] = React.useState(false);
   const [searchValue, setSearchValue] = React.useState('');
+
   
 
   React.useEffect(() => {
@@ -33,6 +35,11 @@ function App() {
   const onChangeSearchInput = (event) => {
     setSearchValue(event.target.value)
   }
+
+  const addToFavorite = (obj) => {
+    axios.post('https://633b38f9671dd0beee002729.mockapi.io/favorites', obj);
+    setFavorites((prev) => [...prev, obj])
+  };
   
   return (
     <div className="wrapper clear">
@@ -59,7 +66,7 @@ function App() {
               title={item.title} 
               price={item.price} 
               imgUrl={item.imgUrl} 
-              onFavorite={() => console.log("добавили закладки")}
+              onFavorite={(obj) => addToFavorite(obj)}
               onBtnPlus={(obj) => onAddToCart(obj)}
               />
             ))}
@@ -72,3 +79,5 @@ function App() {
 }
 
 export default App;
+
+
