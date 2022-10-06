@@ -2,6 +2,7 @@ import ContentItem from "./components/Item/ContentItem"
 import Header from "./components/Header";
 import Drawer from "./components/Drawer";
 import React from "react";
+import axios from "axios";
 
 function App() {
   const [items, setItems] = React.useState([]);
