@@ -7,6 +7,7 @@ function App() {
   const [items, setItems] = React.useState([]);
   const [cartItems, setCartItems] = React.useState([]);
   const [cartOpened, setCartOpened] = React.useState(false);
+  const [searchValue, setSearchValue] = React.useState('');
   
 
   React.useEffect(() => {
@@ -30,10 +31,11 @@ function App() {
           <div className="slider"></div>
           <div className="content">
             <div className="content__headding">
-              <h1 className="headding">Все кроссовки</h1>
+              <h1 className="headding">{searchValue ? `Поиск по запросу: "${searchValue}"` : `Все кроссовки`}</h1>
               <div className="search__block">
+                {searchValue && <img onClick={() => setSearchValue('')} src="./img/btn-remove.svg" alt="clearSearch" className="search__clear"/>}
                 <img src="../img/search.svg" className="search_img" alt="search"/>
-                <input className="search__block_search" placeholder="Поиск..."/>
+                <input onChange={onChangeSearchInput} value={searchValue} className="search__block_search" placeholder="Поиск..."/>
               </div>
             </div>
             <div className="all_item">
