@@ -10,7 +10,7 @@
     .header__left{
       display: flex;
       align-items: center;
-  
+      cursor: pointer;
       img{
         margin-right: 15px;
       }
@@ -35,8 +35,17 @@
   
   .cart{
     cursor: pointer;
+    display: flex;
   }
 
   .favorite{
     cursor: pointer;
+  }
+
+  .cart_img{
+    margin-right: 15px;
+  }
+
+  .cart__count{
+    margin: 0 auto;
   }

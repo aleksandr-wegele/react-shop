@@ -1,5 +1,7 @@
 .content__item{
     margin-top: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
     width: 210px;
     border: 1px solid #F3F3F3;
     border-radius: 40px;
@@ -14,8 +16,8 @@
   
 
   .content__item_img{
-    width: 132px;
-    height: 112px;
+    width: 100%;
+    height: 135px;
     z-index: 0;
   }
   
@@ -53,7 +55,6 @@
   .like{
     position: absolute;
     cursor: pointer;
-    z-index: 1;
   }
 
   

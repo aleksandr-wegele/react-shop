@@ -1,0 +1,26 @@
+.slick-slider{
+    max-width: 960px;
+    height: 300px;
+    margin: 40px auto;
+}
+
+.slick-prev{
+    left: 15px;
+    z-index: 1;
+}
+
+.slick-next{
+    left: 925px;
+    
+    
+}
+
+.img{
+    height: 300px;
+    width: 960px;
+    border-radius: 15px;
+}
+
+.slick-dots{
+    bottom: 5px;
+}

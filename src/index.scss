@@ -1,6 +1,6 @@
 @import 'macro-css';
 
-body {
+body  {
   margin: 0;
   font-family: system-ui;
   -webkit-font-smoothing: antialiased;
@@ -26,7 +26,10 @@ padding-top: 50px auto;
 
 /* контент */
 .content{
+  margin: auto;
+  max-width: 1040px;
   padding: 40px;
+  padding-top: 0;
 }
 
 /*заголовки контента*/
@@ -37,13 +40,15 @@ padding-top: 50px auto;
   font-size: 32px;
   line-height: 39px;
   color: #000000;
+  margin-top: 20px;
 
 }
 
 .content__headding{
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
+  margin: auto 0;
 
 }
 
@@ -77,15 +82,13 @@ padding-top: 50px auto;
 
 .all_item{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: flex-start;
+  flex-direction: row;
   flex-wrap: wrap;
-
 }
 
 .content__item{
   margin-top: 40px;
+  margin-right: 20px;
   width: 210px;
   border: 1px solid #F3F3F3;
   border-radius: 40px;
@@ -125,3 +128,20 @@ padding-top: 50px auto;
   line-height: 17px;
 }
 
+.main{
+  margin-bottom: 85px;
+  background-color: #e6e3e300;
+}
+
+.empty__box{
+  min-width: 800px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.empty__box_img{
+  width: 64px;
+  height: 64px;
+}
