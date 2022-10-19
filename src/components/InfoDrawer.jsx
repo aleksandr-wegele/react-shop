@@ -12,7 +12,7 @@ const InfoDrawer = ({title, image, description}) => {
         <h2 className={styles.drawer__empty_headding}>{title}</h2>
         <p className={styles.drawer__empty_description}>{description}</p>
             <button onClick={() => setCartOpened(false)} className={styles.drawer__btn}>
-                <img src="/img/back.svg" alt="back" className={styles.drawer__btn_back}/> Вернуться назад 
+                <img src="img/back.svg" alt="back" className={styles.drawer__btn_back}/> Вернуться назад 
             </button>
     </div>
   );

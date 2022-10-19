@@ -38,12 +38,12 @@ function Orders(items = []) {
             ))}
             </div>) : ( 
               <div className='empty__box'>
-              <img src='/img/noorder.png' alt='Нет покупок' className='empty__box_img'/>
+              <img src='img/noorder.png' alt='Нет покупок' className='empty__box_img'/>
               <h2 className='empty__box_headding'>У вас нет заказов</h2>
               <p className='empty__box_description'>Оформите хотя бы один заказ.</p>
               <Link to='/'>
               <button  className={styles.drawer__btn}>
-                <img src="/img/back.svg" alt="back" className={styles.drawer__btn_back}/> Вернуться назад 
+                <img src="img/back.svg" alt="back" className={styles.drawer__btn_back}/> Вернуться назад 
               </button>
               </Link>
               </div> 

@@ -27,12 +27,12 @@ function Favorite(items = []) {
             ))}
             </div>) : ( 
               <div className='empty__box'>
-              <img src='/img/nofavorite.png' alt='Нет покупок' className='empty__box_img'/>
+              <img src='img/nofavorite.png' alt='Нет покупок' className='empty__box_img'/>
               <h2 className='empty__box_headding'>Закладок нет :(</h2>
               <p className='empty__box_description'>Вы ничего не добавляли в закладки</p>
               <Link to='/'>
               <button  className={styles.drawer__btn}>
-                <img src="/img/back.svg" alt="back" className={styles.drawer__btn_back}/> Вернуться назад 
+                <img src="img/back.svg" alt="back" className={styles.drawer__btn_back}/> Вернуться назад 
               </button>
               </Link>
               </div> 

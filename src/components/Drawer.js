@@ -40,7 +40,7 @@ function Drawer ({onClose, onRemove, items = [], opened })  {
         <div className={`${styles.overlay} ${opened ? styles.overlayVisible : ''}`}>
           <div className={styles.overlay_box} onClick={onClose}></div>
         <div className={styles.drawer}>
-          <h2 className={styles.drawer__name}>Корзина <img onClick={onClose} src="/img/btn-remove.svg" alt="Remove" className={styles.btn_remove}/></h2>
+          <h2 className={styles.drawer__name}>Корзина <img onClick={onClose} src="img/btn-remove.svg" alt="Remove" className={styles.btn_remove}/></h2>
           {
             items.length > 0 ? (
             <><div className={styles.items}>
@@ -51,7 +51,7 @@ function Drawer ({onClose, onRemove, items = [], opened })  {
                     <p className={styles.cartItem_info_description}>{obj.title}</p>
                     <b className={styles.cartItem_info_price}>{obj.price} руб.</b>
                   </div>
-                  <img onClick={() => onRemove(obj.id)} src="/img/btn-remove.svg" alt="Remove" className={styles.btn_remove} />
+                  <img onClick={() => onRemove(obj.id)} src="img/btn-remove.svg" alt="Remove" className={styles.btn_remove} />
                 </div>
               ))}
             </div><ul className={styles.drawer__list}>
@@ -67,14 +67,14 @@ function Drawer ({onClose, onRemove, items = [], opened })  {
                 </li>
               </ul>
                 <button disabled={isLoading} onClick={onClickOrder} className={styles.drawer__btn}>
-                  Оформить заказ <img src="/img/next.svg" alt="next" className={styles.drawer__btn_next} /> 
+                  Оформить заказ <img src="img/next.svg" alt="next" className={styles.drawer__btn_next} /> 
                 </button></> 
 
           ) : (
             <InfoDrawer 
             title={isOrderComplite ? 'заказ оформлен!' : 'Корзина пустая'}
             description={isOrderComplite ? `Ваш заказ #${orderId} скоро будет передан курьерской доставке` : 'Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.'}
-            image={isOrderComplite ? '/img/orderCreate.png' : '/img/empty-drawer.png'} />
+            image={isOrderComplite ? 'img/orderCreate.png' : 'img/empty-drawer.png'} />
           )
           } 
         </div>

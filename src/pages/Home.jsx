@@ -40,8 +40,8 @@ function Home({
             <div className="content__headding">
               <h1 className="headding">{searchValue ? `Поиск по запросу: "${searchValue}"` : `Все кроссовки`}</h1>
               <div className="search__block">
-                {searchValue && <img onClick={() => setSearchValue('')} src="./img/btn-remove.svg" alt="clearSearch" className="search__clear"/>}
-                <img src="../img/search.svg" className="search_img" alt="search"/>
+                {searchValue && <img onClick={() => setSearchValue('')} src="img/btn-remove.svg" alt="clearSearch" className="search__clear"/>}
+                <img src="img/search.svg" className="search_img" alt="search"/>
                 <input onChange={onChangeSearchInput} value={searchValue} className="search__block_search" placeholder="Поиск..."/>
               </div>
             </div>

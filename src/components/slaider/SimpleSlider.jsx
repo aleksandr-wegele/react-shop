@@ -17,13 +17,13 @@ function SimpleSlider() {
   return (
     <Slider {...settings}>
       <div>
-        <img src="/img/slider/1.jpg" className="img"/>
+        <img src="img/slider/1.jpg" className="img"/>
       </div>
       <div>
-        <img src="/img/slider/2.jpg" className="img"/>
+        <img src="img/slider/2.jpg" className="img"/>
       </div>
       <div>
-        <img src="/img/slider/3.jpg" className="img"/>
+        <img src="img/slider/3.jpg" className="img"/>
       </div>
     </Slider>
   );
