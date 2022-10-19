@@ -1,5 +1,9 @@
 Онлайн магазин кросовок
 
+Деплой проекта
+
+https://aleksandr-wegele.github.io/react-shop/
+
 Инструменты:
 - редактор кода VS Code
 - React app
