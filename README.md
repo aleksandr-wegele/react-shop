@@ -1,6 +1,6 @@
-#[Онлайн магазин кроссовок](https://aleksandr-wegele.github.io/react-shop/)
+# [Онлайн магазин кроссовок](https://aleksandr-wegele.github.io/react-shop/)
 
-###Инструменты:
+### Инструменты:
 - редактор кода VS Code
 - React app
 - React Router
@@ -12,7 +12,7 @@
 
 
 
-###Реализованные функции:
+### Реализованные функции:
 - компонентный подход 
 - стилизация компонентов с помощью CSS Modules
 - вывод cписка React-компонентов с помощью массива
@@ -31,7 +31,7 @@
 
 
 
-###Стэк:
+### Стэк:
 - React
 - React Router
 - React Context
