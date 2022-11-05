@@ -1,10 +1,6 @@
-Онлайн магазин кроссовок
+#[Онлайн магазин кроссовок](https://aleksandr-wegele.github.io/react-shop/)
 
-Деплой проекта
-
-https://aleksandr-wegele.github.io/react-shop/
-
-Инструменты:
+###Инструменты:
 - редактор кода VS Code
 - React app
 - React Router
@@ -16,7 +12,7 @@ https://aleksandr-wegele.github.io/react-shop/
 
 
 
-Реализованные функции:
+###Реализованные функции:
 - компонентный подход 
 - стилизация компонентов с помощью CSS Modules
 - вывод cписка React-компонентов с помощью массива
@@ -35,7 +31,7 @@ https://aleksandr-wegele.github.io/react-shop/
 
 
 
-Стэк:
+###Стэк:
 - React
 - React Router
 - React Context
