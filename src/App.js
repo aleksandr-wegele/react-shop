@@ -134,7 +134,7 @@ const isItemAdded = (id) => {
       
       
       <Header onClickCart={() => setCartOpened(true)}/>
-        <Route exact path="/">
+        <Route exact path="/react-shop/">
           <Home 
           searchValue={searchValue} 
           setSearchValue={setSearchValue}
@@ -143,10 +143,10 @@ const isItemAdded = (id) => {
           onAddToCart={onAddToCart}  
           isLoading={isLoading}/>
         </Route>          
-        <Route exact path="/favorits">
+        <Route exact path="/react-shop/favorits">
           <MyFavorits />
         </Route>
-        <Route exact path="/orders">
+        <Route exact path="/react-shop/orders">
           <Orders/>
         </Route>
     </div>

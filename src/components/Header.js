@@ -10,7 +10,7 @@ function Header(props){
   
     return(
         <header className={styles.header}>
-        <Link to='/'>
+        <Link to='/react-shop/'>
           <div className={styles.header__left}>
             <img widht={40} height={40} src="img/logo_header.png" className={styles.header__left_logo} alt=""/>
             <div className={styles.header__left_info}>
@@ -26,12 +26,12 @@ function Header(props){
               <span className={styles.cart__count}>{totalPrice} руб.</span>
             </li>
             <li className={`${styles.header__right_list_item} ${styles.favorite}`}>
-              <Link to='/favorits'>
+              <Link to='/react-shop/favorits'>
                 <img widht={18} height={18} src="img/favorite_header.svg" className={styles.favorite} alt=""/>
               </Link>
             </li>
             <li className={`${styles.header__right_list_item} ${styles.union}`}>
-              <Link to='/orders'>
+              <Link to='/react-shop/orders'>
                 <img widht={18} height={18} src="img/union_header.svg" className={styles.union} alt=""/>
               </Link>
             </li>

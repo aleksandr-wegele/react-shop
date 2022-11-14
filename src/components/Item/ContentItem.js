@@ -17,7 +17,7 @@ function ContentItem({
   onFavorite, 
   onBtnPlus,
   favorited = false, 
-  loading=false
+  loading = false
 }) {
  
  const [isFavorite, setIsFavorite] = React.useState(favorited);
